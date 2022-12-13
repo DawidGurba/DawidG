@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `uzytk` (
+`id` int(11) NOT NULL,
+  `user` text COLLATE utf8_polish_ci NOT NULL,
+  `pass` text COLLATE utf8_polish_ci NOT NULL,
+  `email` text COLLATE utf8_polish_ci NOT NULL,
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+
+
+INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `email`) VALUES
+(1, 'adam', 'qwerty', 'adam@gmail.com'),
+(2, 'marek', 'asdfg', 'marek@gmail.com'),
+(3, 'anna', 'zxcvb', 'anna@gmail.com'),
+(4, 'andrzej', 'asdfg', 'andrzej@gmail.com');
+
+ALTER TABLE `uzytkownicy`
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`);
+
+
+insert into `odloty` (`id`,`cel`,`data`,`dotarcie`) Values
+(1,'Berlin','2023.08.02 22:00', '2023.08.02 22:00');
