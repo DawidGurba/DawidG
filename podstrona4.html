@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .podstr{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:10px;
+    margin-right:10px;
+    background-color:#f0ef00;
+    height:100px;
+}
+.log{
+    height: 50px;
+        border: 3px solid yellow;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 0 30px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+        width: 350px;
+        border-radius:12px;
+        cursor: pointer;
+
+}
+.log a{
+    color:black;
+    text-decoration:none;
+}
+.log:hover{
+    background-color: yellow;
+        color: yellow;
+}
+        body{
+            font-family: tahoma;
+            background-color: #f0ef00  ;
+            color: black;
+        }
+
+        form>input{
+            display: block;
+            margin: 20px;
+        }
+
+       
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .log{
+        height: 80px;
+        border: 3px solid white;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 0 30px;
+        margin-top: 10px;
+        transition: 0.5s;
+        width: 350px;
+        color: white;
+        text-transform: uppercase;
+        }
+
+        .log a{
+            text-decoration: none;
+            color: white;
+        }
+
+       
+
+        .log{
+        height: 50px;
+        border: 3px solid white;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 0 30px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+        width: 350px;
+        
+        }
+
+        .log_inp:hover{
+            background-color: white;
+        color: black;
+        }
+
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: black;
+        }
+        .sub{
+            height: 50px;
+        border: 3px solid white;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 0 30px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+        width: 350px;
+        cursor: pointer;
+
+        }
+ 
+        .powrot{
+    display:flex;
+    align-items:center;
+            justify-content: center;
+    
+    
+}
+        .log2{
+            height: 50px;
+            color:black;
+        border: 3px solid white;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 0 30px;
+        margin-bottom: 5px;
+        transition: 0.5s;
+        width: 350px;
+        cursor: pointer;
+
+}
+
+
+.log2 a{
+    color:black;
+    text-decoration:none;
+}
+        
+    </style>
+</head>
+<body>
+    <section class="sekcja">
+        <div class="podstr">
+        <button class="log"><a href="zaloguj.php">Strona główna</a></button>
+        <button class="log"><a href="podstrona1.php">Odloty</a></button>
+        <button class="log"><a href="podstrona2.php">Historia</a></button>
+        <button class="log"><a href="podstrona3.html">Galeria</a></button>
+        </div>
+    <h1>Skontaktuj się z nami</h1>
+    <form method="POST" class="formik">
+        Imię: <br> <input type="text" name="nick" class="log" placeholder="Imię"/></br>
+        Nazwisko: <br> <input type="text" name="nick" class="log" placeholder="Nazwisko"/></br>
+        Email: <br> <input type="text" name="nick" class="log" placeholder="E-mail"/></br>
+        <br>
+<input type="submit"  class="sub"/>
+</br>
+    </form>
+    <div class="powrot">
+
+        <button class="log2"><a href="zaloguj.php">Powrót</a></button>
+        
+        </div>
+
+    
+</body>
+</html>
